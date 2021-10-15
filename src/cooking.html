@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Food Central</title>
+	<link rel="stylesheet" href="../public/tailwind.css">
+</head>
+<body class="bg-gray-800 text-white">
+	<div class="container mx-auto mb-8">
+		<nav class="justify-between flex h-20 items-center ">
+			<div class="text-xl font-bold">Food <span class="text-green-400">Central</span></div>
+
+			<div class="flex justify-between w-3/12 font-semibold">
+				<a href="#">HOME</a>
+				<a href="#">PRODUCT</a>
+				<a href="#">ABOUT</a>
+			</div>
+		</nav>
+
+		<main class="mt-32 text-black">
+
+			<div class="flex gap-4 mb-8">
+				<input type="text" class="input-search w-3/12 p-2 bg-gray-600 rounded text-white text-lg focus:ring-2 focus:ring-blue-600" placeholder="food" accesskey="k">
+				<button class="btn-search p-2 bg-gray-600 rounded text-white text-lg">search</button>
+			</div>
+
+			<div class="cards flex gap-14 flex-wrap">
+				
+			</div>
+			
+		</main>
+	</div>
+
+	<div class="modal-template fixed bg-black bg-opacity-40 inset-0 z-10" hidden="true">
+		<div class="bg-white w-9/12 h-4/5 absolute flex flex-col z-20 inset-0 m-auto rounded pb-8">
+			<div class="text-gray-500 flex border-b-2 justify-end py-4 px-6">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 cursor-pointer btn-close" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+					  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+					</svg>
+			</div>
+			<div class="modal-detail overflow-y-scroll h-full">
+			</div>
+		</div>
+	</div>
+	<script src="./scripts/main.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "food-central",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css":"npx tailwindcss build ./src/style.css -o ./public/tailwind.css",
+    "live-server": "live-server --port=3000 --open=./src/cooking.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.8.7",
+    "live-server": "^1.2.1",
+    "postcss": "^7.0.38",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.16"
+  }
+}
